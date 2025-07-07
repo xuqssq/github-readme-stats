@@ -45,16 +45,16 @@ function calculateRank({
   followers,
 }) {
   const COMMITS_MEDIAN = all_commits ? 1000 : 250,
-    COMMITS_WEIGHT = 2;
+    COMMITS_WEIGHT = 6;
   const PRS_MEDIAN = 50,
-    PRS_WEIGHT = 3;
-  const ISSUES_MEDIAN = 25,
+    PRS_WEIGHT = 5;
+  const ISSUES_MEDIAN = 1,
     ISSUES_WEIGHT = 1;
-  const REVIEWS_MEDIAN = 2,
+  const REVIEWS_MEDIAN = 1,
     REVIEWS_WEIGHT = 1;
-  const STARS_MEDIAN = 50,
-    STARS_WEIGHT = 4;
-  const FOLLOWERS_MEDIAN = 10,
+  const STARS_MEDIAN = 1,
+    STARS_WEIGHT = 1;
+  const FOLLOWERS_MEDIAN = 1,
     FOLLOWERS_WEIGHT = 1;
 
   const TOTAL_WEIGHT =
